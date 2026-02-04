@@ -9,7 +9,7 @@
 import Foundation
 import Metal
 
-class SkinProtectFilter: BasicOperation {
+public class SkinProtectFilter: BasicOperation {
     
     // MARK: - 可调节参数
     public var skinLift: Float = 0.04 {
