@@ -20,7 +20,7 @@ fragment half4 genericLookupFragment(
                                      SingleInputVertexIO in [[stage_in]],
                                      texture2d<half> inputTexture [[texture(0)]],
                                      texture2d<half> lutTexture   [[texture(1)]],
-                                     constant IntensityUniform& uniform [[buffer(1)]])
+                                     constant IntensityUniform& uniform [[buffer(0)]])
 {
   constexpr sampler s(address::clamp_to_edge, filter::linear);
   
