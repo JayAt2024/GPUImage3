@@ -20,7 +20,7 @@ inline float3 rgbToYCbCr(float3 rgb) {
   return float3(y, cb, cr);
 }
 
-fragment half4 skinProtectFragment_v2(SingleInputVertexIO in [[stage_in]],
+fragment half4 skinProtectFragment(SingleInputVertexIO in [[stage_in]],
                                       texture2d<half> inputTexture [[texture(0)]])
 {
   constexpr sampler s(address::clamp_to_edge, filter::linear);
