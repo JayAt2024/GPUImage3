@@ -12,7 +12,7 @@ using namespace metal;
 typedef struct
 {
   float intensity;
-  uint lutSize;
+  float lutSize;
 } IntensityUniform;
 
 
@@ -29,7 +29,7 @@ fragment half4 genericLookupFragment(
   // Clamp input
   color = clamp(color, 0.0, 1.0);
   
-  float size = float(uniform.lutSize);
+  float size = uniform.lutSize;
   float maxIndex = size - 1.0;
   
   // Convert to LUT space
