@@ -20,6 +20,7 @@ public class GenericLookupFilter: BasicOperation {
   public init() {
     super.init(fragmentFunctionName: "genericLookupFragment", numberOfInputs: 2)
     
+    ({ lutSize = 8.0 })()
     ({ intensity = 1.0 })()
   }
 }
